@@ -17,7 +17,6 @@
   > - html.php
   > - info.php
   > - verify_ajax.js
-  
   >
   > **Question B**
   > - query.txt
@@ -51,31 +50,31 @@ b. When user key in username and click “Submit”
 
 
 |employee_id |employee_no |employee_name|ic_no|
-|---|---|---|---|
-|1 |1000 |Ali |1234|
-|2 |1001 |Ahmad |2345|
-|3 |1002 |Koay |3456|
-|4 |1003 |Lau |4567|
+|------------|------------|-------------|-----|
+|1           |1000        |Ali          |1234 |
+|2           |1001        |Ahmad        |2345 |
+|3           |1002        |Koay         |3456 |
+|4           |1003        |Lau          |4567 |
 
 
 **Table 2: job_profile_table**
 
-|job_id |job_name|
-|---|---|
-|1 |Finance|
-|2 |Developer|
-|3 |Admin|
-|4|Senior Developer|
+|job_id |job_name        |
+|-------|----------------|
+|1      |Finance         |
+|2      |Developer       |
+|3      |Admin           |
+|4      |Senior Developer|
 
 **Table 3: employee_job_table**
 
 |employee_id |job_id |effective_date|
-|---|---|---|
-|1| 2| 2019-01-01|
-|1| 4| 2020-01-01|
-|2| 2| 2018-01-01|
-|3| 3| 2017-05-14|
-|4| 1| 2019-06-09|
+|------------|-------|--------------|
+|1           | 2     | 2019-01-01   |
+|1           | 4     | 2020-01-01   |
+|2           | 2     | 2018-01-01   |
+|3           | 3     | 2017-05-14   |
+|4           | 1     | 2019-06-09   |
 
 ### With referring to the tables above, please provide a single SQL statement to :
 
@@ -86,3 +85,11 @@ b. list out the employee name, employee no, effective date, job title.
 c. list out the employee name, employee no, **latest job title**
 
 d. delete all employee with employee_no 1000 job title, with effective date of 2020-01-01
+
+
+
+
+
+RUNNER COMMAND
+
+php -S localhost:8000
